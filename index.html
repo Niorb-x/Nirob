@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="CSS/splide.min.css">
+        <link rel="stylesheet" href="CSS/style.css" />
+        <title>Al Imam</title>
+    </head>
+
+    <body>
+        <nav class="main-nav">
+            <div class="main-nav__logo">
+                <img src="MyImages/img5.jpg" class="main-nav__image"/>
+                <p>Al Imam</p>
+            </div>
+            <div class="main-nav__links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#picture">Picture</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home">
+            <article class="home__container glass">
+                <img src="MyImages/img5.jpg" class="home__my-picture" />
+                <div class="home__text">
+                    <h1>I'm Student</h1>
+                    <h3>My name is Al imam</h3>
+                </div>
+            </article>
+        </section>
+        <section id="picture">
+            <div class="title">
+                <h2>Some picture of me</h1>
+            </div>
+                    <div class="splide">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide"><img src="MyImages/img1.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img2.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img3.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img4.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img5.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img6.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img7.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img8.jpg"></li>
+                                <li class="splide__slide"><img src="MyImages/img9.jpg"></li>
+                              </ul>
+                        </div>
+                      </div>
+        </section>
+        <section id="education">
+            <div class="title">
+                <h2>Education</h1>
+            </div>
+            <article class="education__container glass">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>Year</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SSC</td>
+                            <td>2016 - 2018</td>
+                            <td>4.46</td>
+                        </tr>
+                        <tr>
+                            <td>JSC</td>
+                            <td>2013 - 2016</td>
+                            <td>3.65</td>
+                        </tr>
+                        <tr>
+                            <td>ZSC</td>
+                            <td>2018 - 2013</td>
+                            <td>3.08</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section id="Skills">
+          <div class="chart-container">
+            <canvas id="mySkills"></canvas>
+          </div>
+        </section>
+        <script src="JS/effect.js"></script>
+        <script src="JS/script.js"></script>
+    </body>
+</html>
