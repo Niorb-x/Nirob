@@ -16,7 +16,6 @@ html {
 
 body {
     margin: 0;
-    padding: 50px 0 0 0;
     background-color: #1c1a1f;
     font-family: "Jura", sans-serif;
 }
@@ -84,6 +83,7 @@ h2 {
 /* Home section */
 #home {
     width: 100%;
+    margin-top: 50px;
     height: var(--width);
     display: flex;
     justify-content: center;
@@ -225,11 +225,11 @@ h2 {
     justify-content: center;
     padding: 20px 40px;
     background-color: whitesmoke;
-
+    height: var(--width);
 }
 .chart-container {
     width: 100%;
-    height: var(--width);
+    height: 100%;
 }
 
 
@@ -239,6 +239,7 @@ h2 {
     :root{
         --offset: 100px;
     }
+
     #Skills{
         padding: 20px;
     }
@@ -312,7 +313,7 @@ h2 {
 
 @media (max-width: 568px) {
     #Skills {
-        padding: 20px 5px;
+        padding: 10px 5px;
     }
     .splide__slide img {
         height: 300px;

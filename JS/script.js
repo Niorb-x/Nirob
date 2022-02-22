@@ -15,19 +15,23 @@ new Splide(".splide", {
 }).mount();
 
 const ctx = document.getElementById("mySkills").getContext("2d");
-Chart.defaults.font.size = 16;
+window.addEventListener("resize", () => {
+    const width = body.offsetWidth;
+    if (width < 568) {
+        Chart.defaults.font.size = 12;
+    } else if (width < 768) {
+        Chart.defaults.font.size = 14;
+    } else if (width < 968) {
+        Chart.defaults.font.size = 16;
+    } else {
+        Chart.defaults.font.size = 18;
+    }
+});
 
 new Chart(ctx, {
     type: "line",
     data: {
-        labels: [
-            "Jan-Feb",
-            "Mar-Apr",
-            "May-Jun",
-            "Jul-Aug",
-            "Sep-Oct",
-            "Nov-Dec",
-        ],
+        labels: ["Jan-Feb", "Mar-Apr", "May-Jun", "Jul-Aug", "Sep-Oct", "Nov-Dec"],
         datasets: [
             {
                 data: [0, 17, 39, 57, 55, 52],
